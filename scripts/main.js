@@ -20,25 +20,25 @@ const directionalLight1 = new THREE.DirectionalLight(0xffffff, 0.5); // Напр
 directionalLight1.position.set(1, 1, 1).normalize(); // Положение света
 scene.add(directionalLight1);
 
-// const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5); // Второй направленный свет
-// directionalLight2.position.set(-1, 1, -1).normalize(); // Положение света
-// scene.add(directionalLight2);
+const directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5); // Второй направленный свет
+directionalLight2.position.set(-1, 1, -1).normalize(); // Положение света
+scene.add(directionalLight2);
 
-// const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.5); // Третий направленный свет
-// directionalLight3.position.set(1, -1, -1).normalize(); // Положение света
-// scene.add(directionalLight3);
+const directionalLight3 = new THREE.DirectionalLight(0xffffff, 0.5); // Третий направленный свет
+directionalLight3.position.set(1, -1, -1).normalize(); // Положение света
+scene.add(directionalLight3);
 
-// const directionalLight4 = new THREE.DirectionalLight(0xffffff, 0.5); // Четвертый направленный свет
-// directionalLight4.position.set(-1, -1, 1).normalize(); // Положение света
-// scene.add(directionalLight4);
+const directionalLight4 = new THREE.DirectionalLight(0xffffff, 0.5); // Четвертый направленный свет
+directionalLight4.position.set(-1, -1, 1).normalize(); // Положение света
+scene.add(directionalLight4);
 
-// const directionalLight5 = new THREE.DirectionalLight(0xffffff, 0.5); // Пятый направленный свет
-// directionalLight5.position.set(1, -1, 1).normalize(); // Положение света
-// scene.add(directionalLight5);
+const directionalLight5 = new THREE.DirectionalLight(0xffffff, 0.5); // Пятый направленный свет
+directionalLight5.position.set(1, -1, 1).normalize(); // Положение света
+scene.add(directionalLight5);
 
-// const directionalLight6 = new THREE.DirectionalLight(0xffffff, 0.5); // Шестой направленный свет
-// directionalLight6.position.set(-1, 1, 1).normalize(); // Положение света
-// scene.add(directionalLight6);
+const directionalLight6 = new THREE.DirectionalLight(0xffffff, 0.5); // Шестой направленный свет
+directionalLight6.position.set(-1, 1, 1).normalize(); // Положение света
+scene.add(directionalLight6);
 
 const camera = new THREE.PerspectiveCamera( 15, window.innerWidth / window.innerHeight, 1, 500 );
 camera.position.set( 0, 0, 100 );
@@ -59,7 +59,7 @@ controls.maxDistance = 100; // Максимальное расстояние
 
 const loader = new GLTFLoader();
 
-loader.load('../Gipsy.glb', function ( gltf ) {
+loader.load('/scripts/3d.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );
