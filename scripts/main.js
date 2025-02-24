@@ -59,7 +59,7 @@ controls.maxDistance = 100; // Максимальное расстояние
 
 const loader = new GLTFLoader();
 
-loader.load( '../Gipsy.glb', function ( gltf ) {
+loader.load('https://github.com/L1nTon/3d/blob/main/Gipsy.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );
